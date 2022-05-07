@@ -1,0 +1,262 @@
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.sec-home {
+  background-image: url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f3f3f3;
+}
+
+.sec-home:before {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 59%;
+  position: fixed;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-logo {
+  width: 85%;
+  padding-left: 115px;
+}
+.topnav .div-menu {
+  display: none;
+  position: fixed;
+}
+.topnav .div-menu li {
+  list-style: none;
+}
+
+.topnav .div-menu li a {
+  opacity: 0;
+  width: 75px;
+  color: #ffffff;
+  padding: 4px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  position: fixed;
+}
+
+.topnav .div-menu li img {
+  margin: 4px 0px 0px 62px;
+
+  /* position: relative; */
+}
+
+.div-menu li a:hover {
+  transform: translate3d(7px, 0, 0);
+  transition: all 0.6s ease;
+  opacity: 1;
+}
+
+/* .topnav a:hover {
+  background-color: #555;
+  color: white;
+} */
+
+/* .topnav .div-menu li a:not(:first-child),
+.div-menu .active {
+  display: none;
+} */
+.topnav .menu-display {
+  padding-right: 140px;
+  margin-top: 30px;
+}
+
+.topnav .icon {
+  color: white;
+  text-decoration: none;
+}
+/* .topnav.responsive a {
+  float: none;
+  display: block;
+} */
+
+/* .topnav.responsive {
+  position: relative;
+} */
+/* .topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
+/* .topnav.responsive a {
+  float: none;
+  display: block;
+} */
+
+.sec-home .container-home .para1 {
+  margin: 0 auto;
+  font-size: 72px;
+  font-weight: bold;
+  animation: h2-animation 2s 2 ease-in-out;
+}
+
+@keyframes h2-animation {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sec-home .container-home .para2 {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-size: 137px;
+  display: inline-block;
+  line-height: 1em;
+  font-weight: bold;
+  animation: I-am-animation 5s 1 ease;
+}
+@keyframes I-am-animation {
+  0% {
+    opacity: 0;
+    left: -400px;
+  }
+  90% {
+    opacity: 0;
+    left: -400px;
+  }
+  95% {
+    opacity: 0.5;
+    left: 20px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+.sec-home .container-home .para3 {
+  margin: 0 auto;
+  font-size: 33px;
+  font-weight: 600;
+  animation: free-animation 6s 1 ease;
+}
+
+@keyframes free-animation {
+  0% {
+    opacity: 0;
+    left: -400px;
+  }
+  90% {
+    opacity: 0;
+    left: -400px;
+  }
+  95% {
+    opacity: 0.5;
+    left: -20px;
+  }
+  100% {
+    opacity: 1;
+    left: 0px;
+  }
+}
+.sec-home .container-home .hire-btn {
+  font-size: 21px;
+  padding: 8px 32px;
+  border: 4px solid #ffffff;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #ffffff;
+  margin-top: 20px;
+  animation: free-animation 6s 1 ease;
+  animation-direction: reverse;
+}
+
+.sec-home .container-home,
+.sec-home .topnav {
+  position: relative;
+}
+.sec-home .container-home {
+  padding: 171px 0px 315px 140px;
+}
+
+/* @media screen and (max-width: 1920px) {
+  
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    text-align: right;
+  }
+} */
+
+.about-me {
+  color: #ffffff;
+  background-color: rgb(181, 181, 181);
+  position: relative;
+}
+.about-me h2 {
+  margin: 0px;
+  padding: 195px 0px 115px;
+  text-align: center;
+  font-size: 57px;
+  font-weight: bold;
+}
+.about-me .container-fluid {
+  display: flex;
+  padding: 0px 140px;
+}
+.about-me .container-fluid .my-Image .mon-image-border {
+  border: 12px solid #ffffff;
+  box-shadow: 5px 5px 10px #141414;
+  /* border-bottom-left-radius: 15%;
+    border-top-right-radius: 15%; */
+}
+
+.about-me .container-fluid .who-Iam h3 {
+  font-size: 43px;
+  font-weight: bold;
+  padding: 40px 0px 35px;
+}
+.about-me .container-fluid .who-Iam p {
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: 500;
+}
+
+.about-me .container-fluid .my-Image {
+  text-align: right;
+  padding-bottom: 329px;
+}
+
+#back-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#back-top-btn:hover {
+  background-color: #555;
+}
